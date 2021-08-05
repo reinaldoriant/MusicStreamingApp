@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A53B713426BA98AF00774AAA /* MusicStreamingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B713326BA98AF00774AAA /* MusicStreamingAppApp.swift */; };
-		A53B713626BA98AF00774AAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B713526BA98AF00774AAA /* ContentView.swift */; };
+		A53B713626BA98AF00774AAA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B713526BA98AF00774AAA /* MenuView.swift */; };
 		A53B713826BA98B100774AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53B713726BA98B100774AAA /* Assets.xcassets */; };
 		A53B713B26BA98B100774AAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53B713A26BA98B100774AAA /* Preview Assets.xcassets */; };
 		A53B714626BA98B100774AAA /* MusicStreamingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B714526BA98B100774AAA /* MusicStreamingAppTests.swift */; };
 		A53B715126BA98B100774AAA /* MusicStreamingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B715026BA98B100774AAA /* MusicStreamingAppUITests.swift */; };
+		A53B715F26BB7F5D00774AAA /* AlbumDummyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B715E26BB7F5D00774AAA /* AlbumDummyModel.swift */; };
+		A53B716126BB926000774AAA /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B716026BB926000774AAA /* BlurEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 /* Begin PBXFileReference section */
 		A53B713026BA98AF00774AAA /* MusicStreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicStreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B713326BA98AF00774AAA /* MusicStreamingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStreamingAppApp.swift; sourceTree = "<group>"; };
-		A53B713526BA98AF00774AAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A53B713526BA98AF00774AAA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A53B713726BA98B100774AAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A53B713A26BA98B100774AAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A53B713C26BA98B100774AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		A53B714C26BA98B100774AAA /* MusicStreamingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicStreamingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B715026BA98B100774AAA /* MusicStreamingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStreamingAppUITests.swift; sourceTree = "<group>"; };
 		A53B715226BA98B100774AAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A53B715E26BB7F5D00774AAA /* AlbumDummyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDummyModel.swift; sourceTree = "<group>"; };
+		A53B716026BB926000774AAA /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				A53B713326BA98AF00774AAA /* MusicStreamingAppApp.swift */,
-				A53B713526BA98AF00774AAA /* ContentView.swift */,
+				A53B713526BA98AF00774AAA /* MenuView.swift */,
 				A53B713726BA98B100774AAA /* Assets.xcassets */,
 				A53B713C26BA98B100774AAA /* Info.plist */,
 				A53B713926BA98B100774AAA /* Preview Content */,
+				A53B715E26BB7F5D00774AAA /* AlbumDummyModel.swift */,
+				A53B716026BB926000774AAA /* BlurEffect.swift */,
 			);
 			path = MusicStreamingApp;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53B713626BA98AF00774AAA /* ContentView.swift in Sources */,
+				A53B713626BA98AF00774AAA /* MenuView.swift in Sources */,
+				A53B716126BB926000774AAA /* BlurEffect.swift in Sources */,
 				A53B713426BA98AF00774AAA /* MusicStreamingAppApp.swift in Sources */,
+				A53B715F26BB7F5D00774AAA /* AlbumDummyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
