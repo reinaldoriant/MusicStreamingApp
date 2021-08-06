@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D4E0257175F71DD974A2C3B /* Pods_MusicStreamingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D82E4D49DDB43A33A4178FD4 /* Pods_MusicStreamingAppTests.framework */; };
 		A53B713426BA98AF00774AAA /* MusicStreamingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B713326BA98AF00774AAA /* MusicStreamingAppApp.swift */; };
 		A53B713626BA98AF00774AAA /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B713526BA98AF00774AAA /* MenuView.swift */; };
 		A53B713826BA98B100774AAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53B713726BA98B100774AAA /* Assets.xcassets */; };
@@ -16,6 +17,10 @@
 		A53B715F26BB7F5D00774AAA /* AlbumDummyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B715E26BB7F5D00774AAA /* AlbumDummyModel.swift */; };
 		A53B716126BB926000774AAA /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B716026BB926000774AAA /* BlurEffect.swift */; };
 		A53B716626BBEFC500774AAA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B716526BBEFC500774AAA /* PlayerView.swift */; };
+		A53B716A26BC2C8400774AAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53B716926BC2C8400774AAA /* GoogleService-Info.plist */; };
+		A53B716E26BC305900774AAA /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53B716D26BC305900774AAA /* MusicViewModel.swift */; };
+		BE13AFF4829B7DA03BDA1A21 /* Pods_MusicStreamingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110B2290A08FBB2285DD9F4D /* Pods_MusicStreamingApp.framework */; };
+		F14E24D030508BCEE322DEC1 /* Pods_MusicStreamingApp_MusicStreamingAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A41423D52443C869CD24102 /* Pods_MusicStreamingApp_MusicStreamingAppUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110B2290A08FBB2285DD9F4D /* Pods_MusicStreamingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicStreamingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E261D971054CDE12714808 /* Pods-MusicStreamingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicStreamingAppTests/Pods-MusicStreamingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6923386CFACB21D047E391C2 /* Pods-MusicStreamingApp-MusicStreamingAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingApp-MusicStreamingAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MusicStreamingApp-MusicStreamingAppUITests/Pods-MusicStreamingApp-MusicStreamingAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A41423D52443C869CD24102 /* Pods_MusicStreamingApp_MusicStreamingAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicStreamingApp_MusicStreamingAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B713026BA98AF00774AAA /* MusicStreamingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicStreamingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53B713326BA98AF00774AAA /* MusicStreamingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicStreamingAppApp.swift; sourceTree = "<group>"; };
 		A53B713526BA98AF00774AAA /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -51,6 +60,13 @@
 		A53B715E26BB7F5D00774AAA /* AlbumDummyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDummyModel.swift; sourceTree = "<group>"; };
 		A53B716026BB926000774AAA /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
 		A53B716526BBEFC500774AAA /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		A53B716926BC2C8400774AAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A53B716D26BC305900774AAA /* MusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
+		AA73CB0AF667B20B6D2A2343 /* Pods-MusicStreamingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingApp.release.xcconfig"; path = "Target Support Files/Pods-MusicStreamingApp/Pods-MusicStreamingApp.release.xcconfig"; sourceTree = "<group>"; };
+		C6C84DCF44D3F360A4980ADF /* Pods-MusicStreamingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingAppTests.release.xcconfig"; path = "Target Support Files/Pods-MusicStreamingAppTests/Pods-MusicStreamingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9B4FBD6EC6EC39B97F5F1B6 /* Pods-MusicStreamingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingApp.debug.xcconfig"; path = "Target Support Files/Pods-MusicStreamingApp/Pods-MusicStreamingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D82E4D49DDB43A33A4178FD4 /* Pods_MusicStreamingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicStreamingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7F751DA64474AFDE5727FDB /* Pods-MusicStreamingApp-MusicStreamingAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicStreamingApp-MusicStreamingAppUITests.release.xcconfig"; path = "Target Support Files/Pods-MusicStreamingApp-MusicStreamingAppUITests/Pods-MusicStreamingApp-MusicStreamingAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE13AFF4829B7DA03BDA1A21 /* Pods_MusicStreamingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4E0257175F71DD974A2C3B /* Pods_MusicStreamingAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14E24D030508BCEE322DEC1 /* Pods_MusicStreamingApp_MusicStreamingAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		051D8061EA9CA35EE2BECE11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9B4FBD6EC6EC39B97F5F1B6 /* Pods-MusicStreamingApp.debug.xcconfig */,
+				AA73CB0AF667B20B6D2A2343 /* Pods-MusicStreamingApp.release.xcconfig */,
+				6923386CFACB21D047E391C2 /* Pods-MusicStreamingApp-MusicStreamingAppUITests.debug.xcconfig */,
+				E7F751DA64474AFDE5727FDB /* Pods-MusicStreamingApp-MusicStreamingAppUITests.release.xcconfig */,
+				60E261D971054CDE12714808 /* Pods-MusicStreamingAppTests.debug.xcconfig */,
+				C6C84DCF44D3F360A4980ADF /* Pods-MusicStreamingAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1C7901E5585C25314552D552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				110B2290A08FBB2285DD9F4D /* Pods_MusicStreamingApp.framework */,
+				8A41423D52443C869CD24102 /* Pods_MusicStreamingApp_MusicStreamingAppUITests.framework */,
+				D82E4D49DDB43A33A4178FD4 /* Pods_MusicStreamingAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A53B712726BA98AF00774AAA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +127,8 @@
 				A53B714426BA98B100774AAA /* MusicStreamingAppTests */,
 				A53B714F26BA98B100774AAA /* MusicStreamingAppUITests */,
 				A53B713126BA98AF00774AAA /* Products */,
+				051D8061EA9CA35EE2BECE11 /* Pods */,
+				1C7901E5585C25314552D552 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +145,7 @@
 		A53B713226BA98AF00774AAA /* MusicStreamingApp */ = {
 			isa = PBXGroup;
 			children = (
+				A53B716926BC2C8400774AAA /* GoogleService-Info.plist */,
 				A53B716426BBEF8C00774AAA /* Util */,
 				A53B716326BBEF8300774AAA /* Model */,
 				A53B716226BBEEDB00774AAA /* View */,
@@ -143,6 +188,7 @@
 			children = (
 				A53B713526BA98AF00774AAA /* MenuView.swift */,
 				A53B716526BBEFC500774AAA /* PlayerView.swift */,
+				A53B716D26BC305900774AAA /* MusicViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A53B715526BA98B100774AAA /* Build configuration list for PBXNativeTarget "MusicStreamingApp" */;
 			buildPhases = (
+				3AEF283E5D6284577D60CDFC /* [CP] Check Pods Manifest.lock */,
 				A53B712C26BA98AF00774AAA /* Sources */,
 				A53B712D26BA98AF00774AAA /* Frameworks */,
 				A53B712E26BA98AF00774AAA /* Resources */,
+				8E09B91EBA868EE2154450B4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A53B715826BA98B100774AAA /* Build configuration list for PBXNativeTarget "MusicStreamingAppTests" */;
 			buildPhases = (
+				1990A28380B7B6A2AA5FCF7F /* [CP] Check Pods Manifest.lock */,
 				A53B713D26BA98B100774AAA /* Sources */,
 				A53B713E26BA98B100774AAA /* Frameworks */,
 				A53B713F26BA98B100774AAA /* Resources */,
@@ -205,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A53B715B26BA98B100774AAA /* Build configuration list for PBXNativeTarget "MusicStreamingAppUITests" */;
 			buildPhases = (
+				509940A31B04CE5DC5673B49 /* [CP] Check Pods Manifest.lock */,
 				A53B714826BA98B100774AAA /* Sources */,
 				A53B714926BA98B100774AAA /* Frameworks */,
 				A53B714A26BA98B100774AAA /* Resources */,
+				82960DA3C9CAB833FE590C19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +319,7 @@
 			files = (
 				A53B713B26BA98B100774AAA /* Preview Assets.xcassets in Resources */,
 				A53B713826BA98B100774AAA /* Assets.xcassets in Resources */,
+				A53B716A26BC2C8400774AAA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +339,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1990A28380B7B6A2AA5FCF7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicStreamingAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AEF283E5D6284577D60CDFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicStreamingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		509940A31B04CE5DC5673B49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicStreamingApp-MusicStreamingAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82960DA3C9CAB833FE590C19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicStreamingApp-MusicStreamingAppUITests/Pods-MusicStreamingApp-MusicStreamingAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicStreamingApp-MusicStreamingAppUITests/Pods-MusicStreamingApp-MusicStreamingAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicStreamingApp-MusicStreamingAppUITests/Pods-MusicStreamingApp-MusicStreamingAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E09B91EBA868EE2154450B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicStreamingApp/Pods-MusicStreamingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicStreamingApp/Pods-MusicStreamingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicStreamingApp/Pods-MusicStreamingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A53B712C26BA98AF00774AAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53B716E26BC305900774AAA /* MusicViewModel.swift in Sources */,
 				A53B713626BA98AF00774AAA /* MenuView.swift in Sources */,
 				A53B716126BB926000774AAA /* BlurEffect.swift in Sources */,
 				A53B713426BA98AF00774AAA /* MusicStreamingAppApp.swift in Sources */,
@@ -450,6 +606,7 @@
 		};
 		A53B715626BA98B100774AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9B4FBD6EC6EC39B97F5F1B6 /* Pods-MusicStreamingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,7 +620,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruangaldo.MusicStreamingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruangaldo.MusicStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,6 +629,7 @@
 		};
 		A53B715726BA98B100774AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA73CB0AF667B20B6D2A2343 /* Pods-MusicStreamingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -485,7 +643,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ruangaldo.MusicStreamingApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruangaldo.MusicStreaming;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,6 +652,7 @@
 		};
 		A53B715926BA98B100774AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60E261D971054CDE12714808 /* Pods-MusicStreamingAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +675,7 @@
 		};
 		A53B715A26BA98B100774AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C84DCF44D3F360A4980ADF /* Pods-MusicStreamingAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -538,6 +698,7 @@
 		};
 		A53B715C26BA98B100774AAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6923386CFACB21D047E391C2 /* Pods-MusicStreamingApp-MusicStreamingAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +719,7 @@
 		};
 		A53B715D26BA98B100774AAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7F751DA64474AFDE5727FDB /* Pods-MusicStreamingApp-MusicStreamingAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

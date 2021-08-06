@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct PlayerView: View {
     var album: AlbumDummyModel
     var song: Song

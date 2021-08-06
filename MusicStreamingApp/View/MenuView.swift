@@ -10,31 +10,41 @@ import SwiftUI
 
 struct MenuView: View {
     
-    
+    @ObservedObject var data = MusicViewModel()
     @State private var currentAlbum: AlbumDummyModel?
     var body: some View {
         NavigationView{
             ScrollView{
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     LazyHStack{
-                        ForEach(albums, id: \.id, content: { album in
+                        ForEach(data.albums, id: \.self, content: { album in
                             AlbumArt(album: album, isWithText: true).onTapGesture {
-                                currentAlbum = album
+                                self.currentAlbum = album
                             }
                         })
                     }
                 })
-                LazyVStack {
-                    ForEach((currentAlbum?.songs ?? albums.first?.songs) ?? [Song(name: "Song 1", time: "2.36"),
-                                                                                             Song(name: "Song 1", time: "2.36"),
-                                                                                             Song(name: "Song 1", time: "2.36"),
-                                                                                             Song(name: "Song 1", time: "2.36")],id: \.id, content: { song in
-                                                                                                SongCell(album: currentAlbum ?? albums.first!, song: song)
-                                                                                    })
-                   
+                LazyVStack{
+                    if data.albums.first == nil{
+                        EmptyView()
+                    }
+                    else{
+                        ForEach((currentAlbum?.songs ?? data.albums.first?.songs) ?? [Song(name: "Song 1", time: "2.36"),
+                                                                                      Song(name: "Song 1", time: "2.36"),
+                                                                                      Song(name: "Song 1", time: "2.36"),
+                                                                                      Song(name: "Song 1", time: "2.36")],id: \.id, content: { song in
+                                                                                        SongCell(album: currentAlbum ?? data.albums.first!, song: song)
+                                                                                      })
+                        
+                    }
                 }
-            }.navigationTitle("My Band Name")
+            }
+            .navigationTitle("My Band Name")
+            .onAppear{
+                data.loadAlbums()
+            }
         }
+        
     }
 }
 
@@ -47,13 +57,13 @@ struct AlbumArt: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 170, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            if isWithText == false {
+            if isWithText == true {
                 ZStack{
                     Blur(style:  .dark)
                     Text(album.name).foregroundColor(.white)
                 }.frame(height: 60,alignment: .center)
             }
-           
+            
         }).frame(width: 170, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).clipped().cornerRadius(20).shadow(radius: 10).padding(20)
         
     }
@@ -75,10 +85,10 @@ struct SongCell: View {
                         Text(song.name).bold()
                         Spacer()
                         Text(song.time)
-                    }.padding(20)
+                    }.padding(10)
                 }).buttonStyle(PlainButtonStyle())
             
-        }.padding(20)
+        }.padding(10)
     }
 }
 
