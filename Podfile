@@ -7,7 +7,7 @@ target 'MusicStreamingApp' do
 
   # Pods for MusicStreamingApp
   pod 'Firebase/Firestore'
-    
+  pod 'Firebase/Storage'    
   target 'MusicStreamingAppTests' do
     inherit! :search_paths
     # Pods for testing

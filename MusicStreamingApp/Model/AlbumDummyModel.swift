@@ -18,6 +18,7 @@ struct Song: Hashable {
     var id = UUID()
     var name : String
     var time : String
+    var file : String
 }
 
 //var albums = [AlbumDummyModel(name: "Album 1", image: "img_1",

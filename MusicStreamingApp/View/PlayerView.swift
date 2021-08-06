@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
-
+import Firebase
+import AVFoundation
 
 struct PlayerView: View {
-    var album: AlbumDummyModel
-    var song: Song
+    @State var album: AlbumDummyModel
+    @State var song: Song
+    
+    @State var player = AVPlayer()
     
     @State var isPlaying : Bool = false
     
@@ -39,18 +42,73 @@ struct PlayerView: View {
                     
                 }.edgesIgnoringSafeArea(.bottom).frame(height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             }
+            .onAppear{
+                /**ini adalah firebase storage klu ambil*/
+                //         let storage = Storage.storage().reference(forURL: )
+                //                storage.downloadURL{(url,error) in
+                //                    if error != nil {
+                //                        print(error)
+                //                    } else {
+                //                        let url  = URL(string:   "https://apio.kompas.id/soundwave/?blogtype=editorial&berkas=presiden-jokowi-hadiri-ktt-asean.mp3")
+                //                        let player = AVPlayer(url: url!)
+                //                        player.play()
+                //                    }
+                //                }
+                self.playAudio()
+            }
         }
     }
     
+    func playAudio(){
+        guard let url = URL.init(string: self.song.file ) else { return }
+        let playerItem = AVPlayerItem.init(url: url)
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback)
+        } catch(let error) {
+            print(error.localizedDescription)
+        }
+        player = AVPlayer.init(playerItem: playerItem)
+        player.play()
+        isPlaying=true
+    }
+    
     func playPause() {
+        if isPlaying == true {
+            player.pause()
+        } else {
+            player.play()
+        }
         self.isPlaying.toggle()
     }
     
     func next() {
-        
+        if let currentIndex = album.songs.firstIndex(of: song){
+            if currentIndex == album.songs.count - 1{
+            }
+            else{
+                player.pause()
+                song = album.songs[currentIndex + 1]
+                self.playAudio()
+            }
+            
+        }
     }
     
     func previous() {
+        if let currentIndex = album.songs.firstIndex(of: song){
+            if currentIndex == 0 {
+            }
+            else{
+                player.pause()
+                song = album.songs[currentIndex - 1]
+                self.playAudio()
+            }
+            
+        }
+    }
+    
+    func loadAudio(radioURL: String) {
+        
         
     }
 }

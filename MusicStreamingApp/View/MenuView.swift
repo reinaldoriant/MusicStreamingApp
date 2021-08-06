@@ -29,10 +29,7 @@ struct MenuView: View {
                         EmptyView()
                     }
                     else{
-                        ForEach((currentAlbum?.songs ?? data.albums.first?.songs) ?? [Song(name: "Song 1", time: "2.36"),
-                                                                                      Song(name: "Song 1", time: "2.36"),
-                                                                                      Song(name: "Song 1", time: "2.36"),
-                                                                                      Song(name: "Song 1", time: "2.36")],id: \.id, content: { song in
+                        ForEach((currentAlbum?.songs ?? data.albums.first?.songs) ?? [Song(name: "", time: "",file: "")],id: \.id, content: { song in
                                                                                         SongCell(album: currentAlbum ?? data.albums.first!, song: song)
                                                                                       })
                         
